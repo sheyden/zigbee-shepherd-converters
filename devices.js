@@ -7951,6 +7951,17 @@ const devices = [
         description: 'FLAIR Viyu Smarte LED bulb RGB E27',
         extend: generic.light_onoff_brightness_colortemp_colorxy,
     },
+
+    // iCasa
+    {
+        zigbeeModel: ['ICZB-IW11D'],
+        model: 'ICZB-IW11D',
+        vendor: 'iCasa',
+        description: 'Zigbee 3.0 Dimmer',
+        supports: generic.light_onoff_brightness.supports,
+        fromZigbee: generic.light_onoff_brightness.fromZigbee,
+        toZigbee: generic.light_onoff_brightness.toZigbee,
+    },
 ];
 
 module.exports = devices.map((device) =>
